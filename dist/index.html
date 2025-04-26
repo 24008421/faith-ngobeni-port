@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Faith Ngobeni</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faith Ngobeni - Computer Science Student</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* --- Global Styles --- */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Arial', sans-serif;
+        }
+
+        body {
+          background: linear-gradient(135deg, #6e8efb, #a777e3);
+          color: white;
+          line-height: 1.6;
+          min-height: 100vh;
+        }
+
+        .container {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 20px;
+        }
+
+        section {
+          padding: 60px 0;
+        }
+
+        /* --- Header/Hero Section --- */
+        header {
+          text-align: center;
+          padding: 60px 0;
+        }
+
+        .profile-img {
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          object-fit: cover;
+          border: 4px solid white;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+          margin: 20px 0;
+          font-size: 2.5rem;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .tagline {
+          font-size: 1.2rem;
+          opacity: 0.9;
+          max-width: 700px;
+          margin: 0 auto;
+        }
+
+        /* --- About Section --- */
+        .about {
+          background: rgba(255, 255, 255, 0.1);
+          backdrop-filter: blur(10px);
+          border-radius: 15px;
+          padding: 30px;
+          margin: 30px 0;
+        }
+
+        .about h2 {
+          margin-bottom: 20px;
+          text-align: center;
+        }
+
+        .skills {
+          margin-top: 30px;
+        }
+
+        .skills h3 {
+          margin-bottom: 15px;
+          text-align: center;
+        }
+
+        .skills-list {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 15px;
+        }
+
+        .skill-item {
+          background: rgba(255, 255, 255, 0.2);
+          padding: 10px 20px;
+          border-radius: 20px;
+          font-weight: bold;
+        }
+
+        /* --- Projects Section --- */
+        .projects {
+          padding: 40px 0;
+        }
+
+        h2 {
+          text-align: center;
+          margin-bottom: 30px;
+          font-size: 2rem;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 25px;
+        }
+
+        .project-card {
+          background: rgba(255, 255, 255, 0.1);
+          backdrop-filter: blur(10px);
+          border-radius: 15px;
+          padding: 25px;
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-card h3 {
+          margin-bottom: 10px;
+          color: #fff;
+          font-size: 1.5rem;
+        }
+
+        .project-card p {
+          opacity: 0.9;
+          margin-bottom: 15px;
+        }
+
+        .tech {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+          margin-top: 15px;
+        }
+
+        .tech span {
+          background: rgba(255, 255, 255, 0.2);
+          padding: 5px 10px;
+          border-radius: 20px;
+          font-size: 0.8rem;
+        }
+
+        /* --- Contact Section --- */
+        .contact {
+          text-align: center;
+          padding: 50px 0;
+          background: rgba(255, 255, 255, 0.1);
+          backdrop-filter: blur(10px);
+          border-radius: 15px;
+          margin-top: 30px;
+        }
+
+        .contact-info {
+          margin: 20px 0;
+        }
+
+        .contact-info p {
+          margin: 10px 0;
+          font-size: 1.1rem;
+        }
+
+        .contact-links {
+          display: flex;
+          justify-content: center;
+          gap: 25px;
+          margin-top: 30px;
+        }
+
+        .contact-links a {
+          color: white;
+          font-size: 2rem;
+          transition: transform 0.3s;
+        }
+
+        .contact-links a:hover {
+          transform: scale(1.2);
+        }
+
+        /* --- Footer --- */
+        footer {
+          text-align: center;
+          padding: 30px;
+          opacity: 0.8;
+          font-size: 0.9rem;
+          margin-top: 50px;
+        }
+
+        /* --- Animations --- */
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+
+        section {
+          animation: fadeIn 0.8s ease-out;
+        }
+
+        /* --- Responsive Design --- */
+        @media (max-width: 768px) {
+          .container {
+            padding: 15px;
+          }
+          
+          h1 {
+            font-size: 2rem;
+          }
+          
+          .tagline {
+            font-size: 1rem;
+          }
+          
+          .project-grid {
+            grid-template-columns: 1fr;
+          }
+          
+          .profile-img {
+            width: 170px;
+            height: 170px;
+          }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header/Hero Section -->
+        <header>
+            <img src="https://i.ibb.co/1JngVx02/Whats-App-Image-2025-04-20-at-12-39-33-fdabcbe9.jpg" alt="Faith Ngobeni" class="profile-img">
+            <h1>Faith Ngobeni</h1>
+            <p class="tagline">Computer Science Student | Web Developer | Java Programmer</p>
+        </header>
+
+        <!-- About Section -->
+        <section class="about">
+            <h2>About Me</h2>
+            <p>I am Faith, currently a student studying Computer Science. I'm skilled with background in education (Java). I'm passionate about software development because it involves:</p>
+            <ul style="margin: 15px 0; padding-left: 20px;">
+                <li>Software engineering - designing, developing, and testing software applications</li>
+                <li>Mobile app development - creating mobile applications for Android or iOS</li>
+                <li>Web development - building and maintaining websites and web applications</li>
+            </ul>
+            <p>I've worked more on web development through assignments creating different websites. This includes:</p>
+            <ul style="margin: 15px 0; padding-left: 20px;">
+                <li>Front-end development - client-side development using HTML, CSS and JavaScript</li>
+                <li>Back-end development - server-side development using languages like Java</li>
+                <li>Full-stack development - combining both front-end and back-end technologies</li>
+            </ul>
+            
+            <div class="skills">
+                <h3>Key Skills</h3>
+                <div class="skills-list">
+                    <div class="skill-item">HTML</div>
+                    <div class="skill-item">JavaScript</div>
+                    <div class="skill-item">Programming</div>
+                    <div class="skill-item">Database Management</div>
+                    <div class="skill-item">Java</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Teacher Marks Input System</h3>
+                    <p>A website where teachers can input marks for learners and students can view their marks online.</p>
+                    <div class="tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Java</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Student Voting System</h3>
+                    <p>A website where students vote for their preferred presidential candidate, with automatic calculation of percentages and winner determination.</p>
+                    <div class="tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Database</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <h2>Get In Touch</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> 076 910 8099</p>
+                <p><i class="fas fa-envelope"></i> nkatekofaithngobeni094@gmail.com</p>
+            </div>
+            <div class="contact-links">
+                <a href="mailto:nkatekofaithngobeni094@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+27769108099" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Faith Ngobeni. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
